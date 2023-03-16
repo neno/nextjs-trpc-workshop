@@ -64,7 +64,7 @@ export default function HomePage() {
         </section>
         <section className="col-span-4 bg-neutral">
           <h2>Selected Movies</h2>
-          <Gallery className="grid-cols-3 bg-neutral">
+          <Gallery className="grid-cols-3">
             {movies &&
               movies?.map((movie) => (
                 <Card key={movie.id} {...movie}>

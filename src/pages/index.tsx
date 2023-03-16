@@ -19,7 +19,10 @@ export default function HomePage() {
   const { data: searchResults } = useQuery(
     ["search", searchTerm],
     (): Promise<IApiSearchResult> =>
-      fetch(`/api/movies?q=${searchTerm}`).then((res) => res.json()),
+      // fetch(`/api/movies?q=${searchTerm}`).then((res) => res.json()),
+      fetch(
+        `https://api.themoviedb.org/3/search/movie?api_key=00f3f32198696caff437631c007a7548&query=${searchTerm}`
+      ).then((res) => res.json()),
     { enabled: !!searchTerm }
   );
 

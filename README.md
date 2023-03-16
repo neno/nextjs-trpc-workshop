@@ -2,6 +2,30 @@
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
+## Run this project locally
+
+Download the project and install the dependencies.
+
+```bash
+npm install
+```
+
+Init the sqlite database
+
+```bash
+npx prisma db push
+```
+
+Provide the environment variables
+
+```bash
+NEXTAUTH_SECRET="YOUR_SECRET"
+NEXTAUTH_URL="http://localhost:3000" # your domain
+# Next Auth Github Provider
+GITHUB_CLIENT_ID="YOUR-GITHUB_CLIENT_ID"
+GITHUB_CLIENT_SECRET="GITHUB_CLIENT_SECRET"
+```
+
 ## What's next? How do I make an app with this?
 
 We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.

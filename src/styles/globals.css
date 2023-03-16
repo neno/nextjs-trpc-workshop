@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply my-4 text-5xl font-bold;
+}
+
+h2 {
+  @apply bg-base-100 py-4 text-3xl font-bold;
+}
+
+h3 {
+  @apply my-4 text-2xl font-bold;
+}
+
+h4 {
+  @apply my-4 text-xl font-bold;
+}
